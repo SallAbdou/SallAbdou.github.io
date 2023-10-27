@@ -9,7 +9,7 @@ header {
     height: 63px;
 
     .logo {
-        color: black;
+        color:black;
         text-align: center;
         font-family: Shrikhand;
         font-size: 30px;
@@ -84,6 +84,9 @@ main {
         }
     }
 
+  /*******fonctionnement*******/  
+
+
     section.functioning {
         display: flex;
         flex-direction: column;
@@ -143,7 +146,16 @@ main {
                 }
             }
         }
+        
     }
+
+    @media (min-width: 996px) {
+        section.functioning {
+            flex-direction: row;
+    }
+ }  
+
+  /*******restaurants*******/  
 
     section.eateries {
         display: flex;
@@ -227,12 +239,51 @@ main {
                         justify-content: center;
                         align-items: center;
                         width: 20%;
+                    
+                        i{
+                            position: absolute;
+                            }
+                        }
+
+                        .full{
+                            opacity: 0;
+                            transition-property: all;
+                            transition-duration: 300ms;
+                           
+                            &:hover{
+                                opacity: 1;
+                                color: transparent;
+                                background-image: linear-gradient(#FF79DA, #9356DC);
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                        }
+
                     }
                 }
             }
         }
     }
+    @media (min-width: 996px) {
+        section.eateries{
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding-left: 10%;
+            flex-direction: row;
+                a{
+                    width: 40%;
+                    margin-bottom: 30px;
+                    margin-left: 3%;
+            }
+        }
+    }
+    
 }
+
+
+
+
+  /*******footer*******/  
 
 footer {
     background-color: $darkenGrey;
@@ -274,5 +325,23 @@ footer {
         &.contact {
             padding-bottom: 25px;
         }
+    }
+}
+
+@media (min-width: 996px) {
+    footer {
+     justify-content: flex-end;
+     align-items: flex-end;
+     flex-direction: row; 
+
+    h2{
+        padding-bottom: 10px;
+    } 
+    
+    p{ 
+        &.contact{
+        padding-bottom: 15px;
+        }
+      }
     }
 }
