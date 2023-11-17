@@ -134,19 +134,57 @@ body {
         h3 {
             margin-top: 0;
             margin-bottom: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 80%;
         }
 
         span {
             display: flex;
             justify-content: space-between;
             align-items: first baseline;
+           
         }
+
+        .check{
+            background-color:#99e2d0;
+            width: 59px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px 15px 15px 0px;
+            opacity: 0;
+            right: -10px;
+            position: relative;
+            overflow: hidden;
+            transition: 200ms;
+            flex-shrink: 0;
+                i {
+                color: #99e2d0;
+                border-radius: 50%;
+                background: white;
+                margin-right: 8px;
+            }
+
+                &:hover{
+                    opacity: 1;
+                    right: 0;
+                    margin-left: 10px;
+                    transition: 1s;
+
+                }
+    }
 
         p {
             margin-top: 0;
             margin-bottom: 0;
             font-size: 17px;
             font-weight: 300;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 80%;
         }
 
         h4 {
