@@ -1,3 +1,62 @@
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+
+    i {
+        position: absolute;
+        font-size: 24px;
+    }
+
+    .full {
+        opacity: 0;
+        color: transparent;
+        background: linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+
+
+}
+
+.btn {
+    color: #fff;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 50px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .5s, opacity .5s, transform .5s;
+
+    &:hover {
+        opacity: 85%;
+        box-shadow: 4px 8px 10px 4px rgba(0, 0, 0, 0.25);
+        -ms-transform: scale(1.01);
+        /* IE 9 */
+        -webkit-transform: scale(1.01);
+        /* Safari 3-8 */
+        transform: scale(1.01);
+    }
+
+}
+
+
 footer {
     background-color: $darkenGrey;
     color: $white;
@@ -46,7 +105,7 @@ footer {
         flex-direction: row;
         justify-content: flex-end;
         height: 114px;
-        
+
         h2 {
             width: 20%;
             order: 2;
