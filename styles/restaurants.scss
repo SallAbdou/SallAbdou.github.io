@@ -23,7 +23,7 @@ body {
     height: 275px;
     width: 100%;
     object-fit: cover;
-    object-position: center bottom;
+    object-position: center;
 }
 
 .pagemenu {
@@ -96,7 +96,6 @@ body {
         }
 
 
-        /**** ***/
         article {
             display: flex;
             justify-content: space-between;
@@ -176,7 +175,6 @@ body {
             }
         }
 
-        /*** ***/
 
 
         a {
@@ -207,9 +205,6 @@ body {
                         width: 80%;
                     }
                 }
-
-
-
 
 
 
@@ -293,13 +288,30 @@ body {
         padding-right: 45%;
     }
 
+  
+   
+
     .pagemenu {
         width: 80%;
         margin-left: 10%;
 
+        .title {
+          
+            h4 {
+                width: unset;
+                padding-left: 35%;
+            }
+
+            .like {
+                width: unset;
+                padding-left: 5%;
+            }
+
+        }
+
         .card {
             margin-bottom: 2%;
-        }
+        } 
     }
-
 }
+

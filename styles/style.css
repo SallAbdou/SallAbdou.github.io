@@ -482,7 +482,7 @@ body {
   height: 275px;
   width: 100%;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: center;
 }
 
 .pagemenu {
@@ -537,9 +537,8 @@ body {
   }
 }
 .pagemenu .menu {
+  padding-bottom: 15px;
   animation: fadeIn 0.5s both;
-  /**** ***/
-  /*** ***/
 }
 .pagemenu .menu:nth-child(1) {
   animation-delay: 500ms;
@@ -710,6 +709,14 @@ body {
   .pagemenu {
     width: 80%;
     margin-left: 10%;
+  }
+  .pagemenu .title h4 {
+    width: unset;
+    padding-left: 35%;
+  }
+  .pagemenu .title .like {
+    width: unset;
+    padding-left: 5%;
   }
   .pagemenu .card {
     margin-bottom: 2%;
